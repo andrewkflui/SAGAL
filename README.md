@@ -137,3 +137,6 @@ Example (for DBSCAN):
 
 Example (for Birch):
 > python clustering.py --name=USCIS --question_id=8 --encoder=google_universal_sentence_encoder --cluster_num=30 --save_mode=1 --algorithm=birch --plot=2d
+
+## Acknowledgement
+The work described in this paper was fully supported by a grant from the Research Grants Council of the Hong Kong Special Administrative Region, China (UGC/FDS16/E10/19).
