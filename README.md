@@ -18,7 +18,13 @@ This repository contains the prototype implementation and the experiments of the
 
 > Lui, A.K., Ng, S.C. and S.W.N. Cheung (in press), Automated Short Answer Grading with Computer-Assisted Grading Example Acquisition based on Active Learning, Interactive Learning Environment
 
-Existing machine learning short answer grading models are often based on supervised learning on annotated datasets, but such human annotated datasets are expensive to acquire in practice. Active learning is a machine learning approach that iteratively acquires annotated data and updates the model (Saar-Tsechansky and Provost, 2004; Cohn et al., 1994), SAGAL uses active learning with a number of heuristics to optimize the procedure of acquiring grading examples. It can train short answer grading models to an accuracy level with significantly fewer number of annotations.
+Existing machine learning short answer grading models are often based on supervised learning on annotated datasets, but such human annotated datasets are expensive to acquire in practice. Active learning is a machine learning approach that iteratively acquires annotated data and updates the model (Saar-Tsechansky and Provost, 2004; Cohn et al., 1994), SAGAL uses active learning with a number of heuristics to optimize the procedure of acquiring grading examples. It can train short answer grading models to an accuracy level with significantly fewer number of annotations. The following figure outlines the apporach.
+
+<img width="480" alt="Screenshot 2022-10-30 at 1 53 03 PM" src="https://user-images.githubusercontent.com/8808539/198864651-63aefa09-e49b-4791-bab1-792dc62de912.png">
+
+#### Related Software
+
+* [Perceptive Grader](https://github.com/andrewkflui/PerceptiveGrader): A web system demonstrating interactive building of grading models using SAGAL.
 
 ### Prerequisites
 
@@ -63,29 +69,28 @@ Encoding with Skip Thoughts and BERT requires tf1 to work while Google Universal
 For all pretrained models, please put under data/models/pretrained/{ENCODER_NAME}/
 
 #### Google Universal Sentence Encoder
-{ENCODER_NAME} = google_universal_sentence_encoder
+`{ENCODER_NAME} = google_universal_sentence_encoder`
 
 https://tfhub.dev/google/universal-sentence-encoder/4
 
 #### Skip Thoughts
-{ENCODER_NAME} = skip_thoughts
+`{ENCODER_NAME} = skip_thoughts`
 
 This project uses the library https://github.com/elvisyjlin/skip-thoughts.
 
 Please follow the instructions in this https://pypi.org/project/skip-thoughts/ to download the models.
 
 #### GloVe
-{ENCODER_NAME} = glove
+`{ENCODER_NAME} = glove`
 
 https://nlp.stanford.edu/projects/glove/
 
 #### nltk
 For tokenizing for stop word removals.
-
-> nltk.download('punkt')
-> 
-> nltk.download('stopwords')
-
+```
+nltk.download('punkt')
+nltk.download('stopwords')
+```
 ### Dataset Processing
 
 Before running the experiments, the raw datasets need to be processed.
