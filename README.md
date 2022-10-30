@@ -1,4 +1,35 @@
-# GAL
+# Short Answer Grading with Active Learning (SAGAL)
+
+Copyright (C) 2021 - Andrew Lui, Vanessa Ng, Stella Cheung Wing-Nga
+
+The Open University of Hong Kong
+
+This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with this program; if not, see http://www.gnu.org/licenses/.
+
+## Introduction
+
+This repository contains the prototype implementation and the experiments of the Short Answer Grading with Active Learning (SAGAL) algorithm proposed in the following paper:
+
+Lui, A.K., Ng, S.C. and S.W.N. Cheung (in press), Automated Short Answer Grading with Computer-Assisted Grading Example Acquisition based on Active Learning, Interactive Learning Environment
+
+Existing machine learning short answer grading models are often based on supervised learning on annotated datasets, but such human annotated datasets are expensive to acquire in practice. Active learning is a machine learning approach that iteratively acquires annotated data and updates the model (Saar-Tsechansky and Provost, 2004; Cohn et al., 1994), SAGAL uses active learning with a number of heuristics to optimize the procedure of acquiring grading examples. It can train short answer grading models to an accuracy level with significantly fewer number of annotations.
+
+## Installation
+
+Datasets
+Please download the below datasets and put under data/datasets/raw
+
+####Powergrading Short Answer Grading Corpus
+
+https://www.microsoft.com/en-us/download/details.aspx?id=52397
+
+####Semeval 2013 2 and 3 way
+
+https://www.kaggle.com/datasets/smiles28/semeval-2013-2-and-3-way
 
 ### Prerequisites
 
